@@ -16,11 +16,11 @@ export class RegisterComponent implements OnInit {
     this.Deactivate();
   }
 
-  isValue:boolean=true;
+  isValue=false;
 
   Deactivate():Observable<boolean> | boolean {
     if(this.isValue){
-      window.confirm("there are unsaved changes! Are you sure?")
+      window.alert("there are unsaved changes! Are you sure?")
       return true;
     }
 
