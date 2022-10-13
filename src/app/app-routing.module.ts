@@ -13,7 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path : '' , component : HomeComponent},
-  {path : 'home' , component : HomeComponent},
+ // {path : 'home' , component : HomeComponent},
   {path : 'employee' , component : EmployeeComponent},
   {path : 'contact' , component : ContactComponent,resolve:{data:ResolveGuard}},
   {path : 'login' , component : LoginComponent, canActivate:[ActivateGuard]},
